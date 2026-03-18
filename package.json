@@ -1,20 +1,20 @@
 {
-  "name": "workspace",
-  "version": "1.0.0",
-  "description": "個人用のHonoテンプレートRepo",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Onigiripurin/hono-template.git"
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "turbo": "^2.8.17"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Onigiripurin/hono-template/issues"
-  },
-  "homepage": "https://github.com/Onigiripurin/hono-template#readme"
+  "name": "with-vite",
+  "packageManager": "bun@1.3.11",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
 }
