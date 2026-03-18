@@ -7,7 +7,7 @@
     "dev": "vite --clearScreen false",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "eslint \"src/**/*.ts\""
+    "lint": ""
   },
   "dependencies": {
     "@repo/ui": "*"
@@ -15,7 +15,6 @@
   "devDependencies": {
     "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
-    "eslint": "^8.57.0",
     "typescript": "5.5.4",
     "vite": "^5.1.4"
   }
