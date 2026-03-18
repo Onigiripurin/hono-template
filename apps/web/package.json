@@ -13,7 +13,6 @@
     "@repo/ui": "*"
   },
   "devDependencies": {
-    "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
     "typescript": "5.5.4",
     "vite": "^5.1.4"
