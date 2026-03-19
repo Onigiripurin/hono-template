@@ -2,7 +2,7 @@ import type { User } from "@repo/ts-server-domain";
 import type { IUserRepository } from "@repo/ts-server-infrastructure";
 import { prisma } from "../prisma";
 
-export class UserRepositoryImpl implements IUserRepository {
+export class UserRepository implements IUserRepository {
 	async findById(id: string): Promise<User | null> {
 		const user = await prisma.user.findUnique({
 			where: { id },

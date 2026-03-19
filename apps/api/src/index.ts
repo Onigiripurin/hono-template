@@ -1,8 +1,8 @@
 import { CreateUserUseCase } from "@repo/ts-server-application";
-import { UserRepositoryImpl } from "@repo/ts-server-prisma-adapter";
+import { UserRepository } from "@repo/ts-server-prisma-adapter";
 import { Hono } from "hono";
 
-const userRepository = new UserRepositoryImpl();
+const userRepository = new UserRepository();
 const createUserUseCase = new CreateUserUseCase(userRepository);
 
 const app = new Hono();
