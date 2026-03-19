@@ -3,7 +3,9 @@
 	"scripts": {
 		"build": "turbo run build",
 		"dev": "turbo run dev",
-		"lint": "biome format --write . && biome check --write ."
+		"lint": "biome format --write . && biome check --write .",
+		"prisma:migrate": "cd packages/ts-server-prisma-adapter && bun run prisma:migrate",
+		"prisma:migrate:reset": "cd packages/ts-server-prisma-adapter && bun run prisma:migrate:reset"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.4.8",

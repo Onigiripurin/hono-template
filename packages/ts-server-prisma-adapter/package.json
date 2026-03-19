@@ -1,7 +1,9 @@
 {
 	"name": "@repo/ts-server-prisma-adapter",
 	"scripts": {
-		"postinstall": "prisma generate"
+		"postinstall": "prisma generate",
+		"prisma:migrate": "prisma migrate dev",
+		"prisma:migrate:reset": "prisma migrate reset"
 	},
 	"version": "0.0.0",
 	"private": true,
