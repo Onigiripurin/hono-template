@@ -3,7 +3,8 @@
 	"scripts": {
 		"postinstall": "prisma generate",
 		"prisma:migrate": "prisma migrate dev",
-		"prisma:migrate:reset": "prisma migrate reset"
+		"prisma:migrate:reset": "prisma migrate reset",
+		"typecheck": "tsc --noEmit"
 	},
 	"version": "0.0.0",
 	"private": true,

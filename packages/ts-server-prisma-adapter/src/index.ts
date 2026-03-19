@@ -1,2 +1,2 @@
 export { prisma } from "./prisma";
-export { UserRepositoryImpl } from "./repositories/UserRepositoryImpl";
+export { UserRepository } from "./repositories/UserRepository";
