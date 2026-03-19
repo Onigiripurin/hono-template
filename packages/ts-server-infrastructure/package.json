@@ -1,0 +1,14 @@
+{
+	"name": "@repo/ts-server-infrastructure",
+	"version": "0.0.0",
+	"private": true,
+	"main": "./src/index.ts",
+	"types": "./src/index.ts",
+	"dependencies": {
+		"@repo/ts-server-domain": "*"
+	},
+	"devDependencies": {
+		"typescript": "5.5.4",
+		"@repo/typescript-config": "*"
+	}
+}
