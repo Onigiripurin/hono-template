@@ -1,12 +1,17 @@
 {
 	"name": "api",
 	"scripts": {
-		"dev": "bun run --hot src/index.ts"
+		"dev": "bun run --hot src/index.ts",
+		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
-		"hono": "^4.12.8"
+		"hono": "^4.12.8",
+		"@repo/ts-server-application": "*",
+		"@repo/ts-server-prisma-adapter": "*"
 	},
 	"devDependencies": {
-		"@types/bun": "latest"
+		"@types/bun": "latest",
+		"typescript": "5.5.4",
+		"@repo/typescript-config": "*"
 	}
 }
